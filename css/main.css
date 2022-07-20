@@ -1658,7 +1658,7 @@ iframe {
   margin: 0 auto;
   margin-top: 150px;
   background-image: url("../images/modalbg.png");
-  animation: 3s move ;
+  animation: 1.8s move ;
 }
 
 @keyframes move{
