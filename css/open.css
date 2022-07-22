@@ -79,6 +79,55 @@
     font-display: swap;
 }
 
+/* GENERAL */
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Futura PT Book';
+    background-color: #f9f9f9;
+    background-image: url("../images/bg.png");
+    background-position: calc(50% - 78px) calc(50% + 209px);
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* Start Open Hero Section */
 #open-hero {
     padding-top: 497px;
@@ -334,7 +383,7 @@
     display: flex;
 }
 
-.open-from-part__title-box {
+.open-form-part__title-box {
     width: 276px;
     margin: 0 61px 0 100px;
 }
@@ -356,7 +405,20 @@
 }
 
 .open-form {
+    position: relative;
     width: 335px;
+}
+
+.open-form::before {
+    position: absolute;
+    top: calc(50% - 289px);
+    left: calc(50% + 100px);
+    width: 700px;
+    height: 636px;
+    background-image: url("../images/open-form-dog-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
 }
 
 .open-form__input,
@@ -395,6 +457,7 @@
 }
 
 .open-form__btn {
+    margin-top: 12px;
     padding: 15px 49px 14px 50px;
     font-weight: 500;
     font-size: 16px;
@@ -412,22 +475,6 @@
 
 .open-form__btn:active {
     opacity: 0.6;
-}
-
-.open-form{
-    position: relative;
-}
-
-.open-form::before {
-    position: absolute;
-    top: calc(50% - 295px);
-    left: calc(50% + 100px);
-    width: 700px;
-    height: 636px;
-    background-image: url("../images/open-form-dog-bg.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    content: "";
 }
 
 /* End of Open Form Section */
