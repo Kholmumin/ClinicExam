@@ -1,0 +1,220 @@
+:root {
+    --main-black-color: #333;
+    --dark-color: #949494;
+    --blue-color: #3D9CEA;
+    --yellow-color: #FFBD54;
+    --error-color: #DC4D41;
+    --yellow-hover: #F4FFAD;
+  }
+  
+/* hero-section-start */
+
+.hero-about{
+    width: 100%;
+}
+.hero-about__box{
+    position: relative;
+    width: 600px;
+    height: 150px;
+    margin: 120px 0px;
+    padding: 0px 60px;
+}
+.hero-about__box::after{
+    position: absolute;
+    content: "";
+    width: 415px;
+    height: 317px;
+    top: -60px;
+    right: -550px;
+    background-image: url(../images/cat-hero-blog-page.svg);
+
+}
+.hero-about__theme{
+    width: 560px;
+    height: 64px;
+    margin-bottom: 21px;
+    font-family: 'Futura PT';
+    color: var(--main-black-color);
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 64px;
+}
+.hero-about__commit{
+    width: 447px;
+    height: 60px;
+    color: var(--dark-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+/* hero-section-end */
+
+/* before-section-start */
+.before-getting__box{
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    border-radius: 5px;
+}
+.before-getting__img{
+    width: 558px;
+    height: 525px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+.before-getting__box-two{
+    width: 750px;
+    height: 525px;
+    padding: 80px 70px;
+}
+.before-getting__top-box{
+    display: flex;
+    justify-content: space-between;
+}
+.before-getting__hesh-box{
+    width: 150px;
+    height: 22px;
+}
+.before-getting__hesh{
+    color: var(--blue-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: none;
+}
+.data{
+    color: var(--dark-color);
+    width: 71px;
+    height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+.before-getting__theme{
+    width: 327px;
+    height: 76px;
+    color: var(--main-black-color);
+    font-family: 'Futura PT';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 39px;
+}
+.before-getting__commit{
+    width: 517px;
+    height: 163px;
+    color: var(--dark-color);
+    font-family: 'Futura PT';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 51px;
+}
+.read-more{
+    position: relative;
+    color: var(--main-black-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Futura PT';
+    font-weight: 500;
+    line-height: 21px;
+    padding-left: 30px;
+}
+.read-more::before{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    top: -4px;
+    left: -4px;
+    background-image: url(../images/leg.svg);
+}
+.read-more:hover{
+    color: var(--yellow-color);
+}
+.read-more:active{
+    opacity: 0.6;
+}
+/* before-section-end */
+
+/* blogs-section-start */
+
+.blogs{
+  margin-top: 125px;
+    margin-bottom: 150px;
+}
+
+.blogs__list{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 116px;
+}
+.blogs__item{
+    width: 305px;
+    height: 435px;
+    margin-bottom: 60px;
+}
+.blogs__box{
+  border: 1px solid #E4E4E2;
+  border-top: none;
+  border-radius: 0px 0px 5px 5px;
+  width: 305px;
+  height: 255px;
+  padding: 20px 30px;
+}
+.blogs__img{
+    width: 305px;
+    height: 180px;
+    border-radius: 5px 5px 0px 0px;
+}
+.blogs__data{
+    padding-left: 180px;
+}
+.blogs__theme{
+    width: 200px;
+    height: 50px;
+    margin: 0px;
+    color: var(--main-black-color);
+    font-family: 'Futura PT';
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25px;
+}
+.blogs__commit{
+    width: 244px;
+    height: 6opx;
+    margin-bottom: 38px;
+    color: var(--dark-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.blogs_link{
+    margin-left: 30px;
+    margin-bottom: 37px;
+}
+.again{
+    position: relative;
+    margin-left: 43%;
+    background-color: var(--main-black-color);
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 16px 40px;
+    padding-left: 65px;
+    border-radius: 3px;
+}
+.again::before{
+    position: absolute;
+    content: "";
+    width: 19px;
+    height: 16px;
+    top: 18px;
+    left: 30px;
+    background-image: url(../images/load.svg);
+}
+/* blogs-section-end */
